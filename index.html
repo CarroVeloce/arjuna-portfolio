@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arjuna Dwi Damara Putra | Machine Learning Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Arjuna Dwi Damara Putra - Machine Learning Engineer specializing in Computer Vision, Edge AI, Deep Learning, and MLOps. Based in Petukangan Utara, South Jakarta.">
+  <meta name="keywords" content="Arjuna Dwi Damara Putra, Machine Learning Engineer, AI Engineer, Computer Vision, YOLO, TensorFlow, PyTorch, Edge AI, Jakarta, Politeknik Negeri Jakarta">
+  <meta name="author" content="Arjuna Dwi Damara Putra">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://carroveloce.github.io/arjuna-portfolio/">
+  <meta property="og:title" content="Arjuna Dwi Damara Putra | Machine Learning Engineer">
+  <meta property="og:description" content="Designing, developing, and deploying end-to-end AI solutions in Computer Vision, Deep Learning, and Edge AI.">
+  <meta property="og:image" content="https://carroveloce.github.io/arjuna-portfolio/assets/og-preview.png">
+
+  <!-- Google Fonts Preconnect & Inter / JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- Favicon / SVG Data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230B0F17'/><path d='M30 70 L50 30 L70 70 M38 56 L62 56' stroke='%2300F0FF' stroke-width='8' stroke-linecap='round' stroke-linejoin='round' fill='none'/><circle cx='50' cy='30' r='6' fill='%23818CF8'/></svg>">
+</head>
+<body>
+  <!-- Neural Canvas Background -->
+  <canvas id="neural-canvas" aria-hidden="true"></canvas>
+
+  <!-- Ambient Glow Effects -->
+  <div class="glow-orb glow-top-left" aria-hidden="true"></div>
+  <div class="glow-orb glow-bottom-right" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="#hero" class="brand-logo" aria-label="Arjuna Dwi Damara Putra Home">
+        <span class="logo-symbol">&lt;</span>
+        <span class="logo-name">Arjuna</span><span class="logo-accent">.ai</span>
+        <span class="logo-symbol">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links" id="nav-links" role="menubar">
+        <li role="none"><a href="#hero" class="nav-link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+        <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
+        <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#certifications" class="nav-link" role="menuitem">Certifications</a></li>
+        <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline btn-sm nav-cta">Get In Touch</a>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="section hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Status Pill -->
+          <div class="status-pill" data-aos="fade-down">
+            <span class="status-indicator"></span>
+            <span class="status-text">Available for Machine Learning Engineer Roles</span>
+          </div>
+
+          <p class="hero-eyebrow">Hi, I am</p>
+          <h1 class="hero-title" id="hero-title">
+            <span class="name-gradient">Arjuna Dwi Damara Putra</span>
+          </h1>
+          <h2 class="hero-subtitle">Machine Learning Engineer</h2>
+
+          <p class="hero-summary">
+            Specializing in designing, developing, and deploying end-to-end AI solutions across 
+            <strong>Computer Vision</strong>, <strong>Deep Learning</strong>, <strong>Edge AI (TFLite)</strong>, 
+            and <strong>MLOps</strong>. Dedicated to transforming complex computer vision architectures into high-performance, 
+            low-latency models deployed in demanding industrial environments.
+          </p>
+
+          <!-- Quick Info Badges -->
+          <div class="info-badges">
+            <div class="badge-item">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Petukangan Utara, South Jakarta</span>
+            </div>
+            <div class="badge-item">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              <span>End-to-End AI Pipelines</span>
+            </div>
+            <div class="badge-item">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+              <span>Edge AI & Quantization</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Quick Contact Action Bar -->
+          <div class="quick-contacts">
+            <div class="contact-pill-item">
+              <span class="contact-pill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </span>
+              <a href="mailto:damararjuna819@gmail.com" class="contact-link" title="Send email">damararjuna819@gmail.com</a>
+              <button class="copy-btn" data-copy="damararjuna819@gmail.com" aria-label="Copy email address" title="Copy email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span class="copy-tooltip">Copy</span>
+              </button>
+            </div>
+
+            <div class="contact-pill-item">
+              <span class="contact-pill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </span>
+              <a href="tel:085156922833" class="contact-link" title="Call phone">0851-5692-2833</a>
+              <a href="https://wa.me/6285156922833" target="_blank" rel="noopener noreferrer" class="wa-quick-btn" title="Open WhatsApp">
+                <span class="wa-badge">WA</span>
+              </a>
+              <button class="copy-btn" data-copy="0851-5692-2833" aria-label="Copy phone number" title="Copy phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span class="copy-tooltip">Copy</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Element -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-terminal-card">
+            <div class="terminal-header">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+              <span class="terminal-title">arjuna_ml_pipeline.py</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="c-keyword">import</span> <span class="c-lib">tensorflow</span> <span class="c-keyword">as</span> <span class="c-val">tf</span></p>
+              <p><span class="c-keyword">import</span> <span class="c-lib">torch</span>, <span class="c-lib">cv2</span></p>
+              <p class="c-comment"># Engineer profile initialization</p>
+              <p><span class="c-var">engineer</span> = {</p>
+              <p class="t-indent"><span class="c-key">"name"</span>: <span class="c-str">"Arjuna Dwi Damara Putra"</span>,</p>
+              <p class="t-indent"><span class="c-key">"role"</span>: <span class="c-str">"Machine Learning Engineer"</span>,</p>
+              <p class="t-indent"><span class="c-key">"location"</span>: <span class="c-str">"Petukangan Utara, South Jakarta"</span>,</p>
+              <p class="t-indent"><span class="c-key">"specialties"</span>: [<span class="c-str">"Computer Vision"</span>, <span class="c-str">"Edge AI"</span>, <span class="c-str">"MLOps"</span>],</p>
+              <p class="t-indent"><span class="c-key">"deployed_models"</span>: [<span class="c-str">"VeggieVision"</span>, <span class="c-str">"Pest Busters"</span>, <span class="c-str">"Container Vision"</span>]</p>
+              <p>}</p>
+              <p class="c-comment"># Deploying high-throughput models</p>
+              <p><span class="c-var">status</span> = <span class="c-func">deploy_to_production</span>(<span class="c-var">engineer</span>, latency_ms=&lt;15)</p>
+              <p><span class="c-func">print</span>(<span class="c-str">f"System Ready: {status.metrics}"</span>)</p>
+              <p class="terminal-output"><span class="output-arrow">&gt;&gt;</span> [OPTIMIZED] Accuracy: 96.4% | Quantized TFLite: ACTIVE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Education Section -->
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">BACKGROUND & ACADEMICS</span>
+          <h2 class="section-title" id="about-heading">About Me & Education</h2>
+          <p class="section-desc">Bridging deep learning architectures with production hardware constraints.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Biography Narrative -->
+          <div class="about-card glass-panel">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <h3 class="card-title">Engineering Mindset & Profile</h3>
+            <p class="card-text">
+              I am a Machine Learning Engineer based in Petukangan Utara, South Jakarta, with a proven track record of handling the full AI development lifecycle. 
+              My expertise spans raw data ingestion, large-scale annotation pipelines, deep learning architecture design (CNN, RNN, LSTM, Transformers), model quantization, and edge deployment.
+            </p>
+            <p class="card-text">
+              From curating challenging logistics datasets in shipping yards to developing real-time edge AI apps for hydroponic farming, 
+              my focus is building robust, scalable intelligence systems that perform reliably under real-world constraints.
+            </p>
+            
+            <div class="focus-tags">
+              <span class="focus-tag">Supervised & Unsupervised Learning</span>
+              <span class="focus-tag">Computer Vision (YOLO / OpenCV)</span>
+              <span class="focus-tag">NLP (BERT / Transformers)</span>
+              <span class="focus-tag">Time Series Forecasting</span>
+              <span class="focus-tag">Data Preprocessing & Feature Engineering</span>
+              <span class="focus-tag">Edge Optimization (TFLite)</span>
+            </div>
+          </div>
+
+          <!-- Academic Background Timeline -->
+          <div class="education-card glass-panel">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            </div>
+            <h3 class="card-title">Academic Journey</h3>
+
+            <div class="timeline">
+              <!-- PNJ -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <h4 class="institution-name">Politeknik Negeri Jakarta</h4>
+                    <span class="timeline-period">Sept 2022 - Juli 2026</span>
+                  </div>
+                  <div class="degree-badge">Teknik Informatika (Informatics Engineering)</div>
+                  <p class="timeline-desc">
+                    Comprehensive study of software engineering principles, algorithm design, machine learning pipelines, cloud computing architectures, and applied computer vision.
+                  </p>
+                  <span class="status-chip active-chip">Undergraduate / Final Year</span>
+                </div>
+              </div>
+
+              <!-- SMK Negeri 9 -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <h4 class="institution-name">SMK Negeri 9 Kabupaten Tangerang</h4>
+                    <span class="timeline-period">Juli 2019 - Juni 2022</span>
+                  </div>
+                  <div class="degree-badge">Multimedia</div>
+                  <p class="timeline-desc">
+                    Developed fundamental competencies in digital media processing, visual interface design, computer graphics, and digital problem-solving.
+                  </p>
+                  <span class="status-chip">Graduated</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="section experience-section" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PROFESSIONAL WORK</span>
+          <h2 class="section-title" id="experience-heading">Work Experience</h2>
+          <p class="section-desc">Hands-on industrial computer vision and deep learning engineering.</p>
+        </div>
+
+        <div class="experience-card glass-panel">
+          <div class="exp-header">
+            <div class="exp-title-group">
+              <div class="company-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+              </div>
+              <div>
+                <h3 class="company-name">PT Salam Pacific Indonesia Lines</h3>
+                <h4 class="exp-role">AI Intern</h4>
+              </div>
+            </div>
+            <div class="exp-meta">
+              <span class="period-pill">Agt 2025 - Feb 2026</span>
+              <span class="location-pill">Logistics & Shipping Operations</span>
+            </div>
+          </div>
+
+          <div class="exp-body">
+            <p class="exp-summary">
+              Engaged in building production-grade computer vision infrastructure for automated shipping container inspection across dynamic logistics environments:
+            </p>
+
+            <ul class="achievement-list">
+              <li class="achievement-item">
+                <div class="bullet-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                </div>
+                <div class="bullet-content">
+                  <strong>End-to-End Computer Vision Pipeline:</strong>
+                  Designed and constructed an end-to-end automated computer vision pipeline tailored for container damage detection, identifying structural dents, punctures, rust degradation, and seal discrepancies.
+                </div>
+              </li>
+              <li class="achievement-item">
+                <div class="bullet-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                </div>
+                <div class="bullet-content">
+                  <strong>Dataset Collection, Cleaning & Annotation:</strong>
+                  Orchestrated industrial image collection, data cleaning, duplicate suppression, and precise multi-class bounding box annotation across large-scale logistics yard inspection frames.
+                </div>
+              </li>
+              <li class="achievement-item">
+                <div class="bullet-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                </div>
+                <div class="bullet-content">
+                  <strong>Preprocessing Workflows & Data Augmentation:</strong>
+                  Engineered adaptive image preprocessing workflows including dynamic histogram normalization, contrast correction, and domain-specific synthetic data augmentation to ensure robust invariant detection across varying weather, rain, and shadow conditions.
+                </div>
+              </li>
+              <li class="achievement-item">
+                <div class="bullet-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                </div>
+                <div class="bullet-content">
+                  <strong>Deep Learning Model Training & Optimization:</strong>
+                  Trained, evaluated, and optimized deep learning convolutional object detection architectures for container damage classification in real logistics environments, achieving superior inference speeds and high precision.
+                </div>
+              </li>
+            </ul>
+
+            <div class="exp-tech-stack">
+              <span class="tech-tag">Computer Vision</span>
+              <span class="tech-tag">YOLO</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">Deep Learning</span>
+              <span class="tech-tag">Image Normalization</span>
+              <span class="tech-tag">Data Augmentation</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Logistics AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">APPLIED INNOVATION</span>
+          <h2 class="section-title" id="projects-heading">Featured AI Projects</h2>
+          <p class="section-desc">Delivering production-ready machine learning solutions in edge and agri-tech domains.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: VeggieVision -->
+          <article class="project-card glass-panel" aria-labelledby="project-veggievision">
+            <div class="project-header">
+              <div class="project-meta-bar">
+                <span class="project-badge">Edge AI & OCR</span>
+                <span class="project-date">April 2025 - Mei 2025</span>
+              </div>
+              <h3 class="project-title" id="project-veggievision">VeggieVision</h3>
+              <p class="project-role-badge">Role: Machine Learning Engineer</p>
+            </div>
+
+            <p class="project-desc">
+              An AI-based system for automated vegetable type and weight detection using YOLO-TFLite and ML Kit OCR. 
+              Features a Web & Android interface for real-time data export in hydroponic vegetable management.
+            </p>
+
+            <div class="project-details">
+              <h4 class="detail-subtitle">Key Engineering Highlights:</h4>
+              <ul class="detail-list">
+                <li>Trained custom YOLO object detection models for distinct hydroponic vegetable cultivars.</li>
+                <li>Converted and quantized models to TensorFlow Lite (TFLite) for low-latency on-device Android inference.</li>
+                <li>Integrated Google ML Kit OCR for real-time digital scale seven-segment display reading.</li>
+                <li>Engineered seamless web and mobile dashboard synchronization for instant CSV/data export.</li>
+              </ul>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tag-pill">YOLO</span>
+              <span class="tag-pill">TensorFlow Lite</span>
+              <span class="tag-pill">ML Kit OCR</span>
+              <span class="tag-pill">Android</span>
+              <span class="tag-pill">Web Interface</span>
+              <span class="tag-pill">Python</span>
+              <span class="tag-pill">Hydroponics</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Pest Busters Apps -->
+          <article class="project-card glass-panel" aria-labelledby="project-pestbusters">
+            <div class="project-header">
+              <div class="project-meta-bar">
+                <span class="project-badge">AgriTech & Deep Learning</span>
+                <span class="project-date">Okt 2024 - Des 2024</span>
+              </div>
+              <h3 class="project-title" id="project-pestbusters">Pest Busters Apps</h3>
+              <p class="project-role-badge">Role: Machine Learning Engineer</p>
+            </div>
+
+            <p class="project-desc">
+              An AI-based application to detect and classify leaf vegetable crop pests (aphids, armyworms, snails) 
+              for sustainable hydroponic farming, offering early warnings and biological treatment insights.
+            </p>
+
+            <div class="project-details">
+              <h4 class="detail-subtitle">Key Engineering Highlights:</h4>
+              <ul class="detail-list">
+                <li>Curated diverse agricultural imagery under complex greenhouse lighting and leaf occlusion.</li>
+                <li>Trained high-accuracy deep learning convolutional models (CNN) for multi-class pest classification.</li>
+                <li>Targeted critical micro-pests: aphids, armyworms, and snails with tight bounding box confidence.</li>
+                <li>Integrated preventative mitigation guidance to minimize chemical pesticide reliance.</li>
+              </ul>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tag-pill">Deep Learning</span>
+              <span class="tag-pill">CNN</span>
+              <span class="tag-pill">Computer Vision</span>
+              <span class="tag-pill">PyTorch / TensorFlow</span>
+              <span class="tag-pill">Data Augmentation</span>
+              <span class="tag-pill">Mobile AI</span>
+              <span class="tag-pill">Sustainable Agri</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">COMPETENCIES</span>
+          <h2 class="section-title" id="skills-heading">Technical Skills Matrix</h2>
+          <p class="section-desc">Specialized capabilities across modern machine learning and software engineering.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- ML & DL -->
+          <div class="skill-category-card glass-panel">
+            <div class="skill-icon-header">
+              <div class="cat-icon icon-cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              </div>
+              <h3 class="cat-title">Machine Learning & Deep Learning</h3>
+            </div>
+            <ul class="skill-items">
+              <li><strong>Machine Learning:</strong> Supervised Learning, Unsupervised Learning</li>
+              <li><strong>Deep Learning:</strong> CNN, RNN, LSTM Architectures</li>
+              <li><strong>Frameworks:</strong> TensorFlow, PyTorch, Keras, Scikit-Learn</li>
+              <li><strong>Data Prep:</strong> Data Preprocessing, Feature Engineering</li>
+              <li><strong>Forecasting:</strong> Time Series Forecasting</li>
+            </ul>
+          </div>
+
+          <!-- Computer Vision & NLP -->
+          <div class="skill-category-card glass-panel">
+            <div class="skill-icon-header">
+              <div class="cat-icon icon-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </div>
+              <h3 class="cat-title">Computer Vision & NLP</h3>
+            </div>
+            <ul class="skill-items">
+              <li><strong>Computer Vision:</strong> YOLO (Object Detection), OpenCV</li>
+              <li><strong>Workflows:</strong> Image Normalization, Synthetic Data Augmentation</li>
+              <li><strong>OCR & Edge:</strong> Google ML Kit OCR, Seven-Segment Parsing</li>
+              <li><strong>Natural Language Processing:</strong> Transformers, BERT</li>
+              <li><strong>Data Analytics:</strong> Exploratory Data Analysis, Metric Visualization</li>
+            </ul>
+          </div>
+
+          <!-- Deployment & MLOps -->
+          <div class="skill-category-card glass-panel">
+            <div class="skill-icon-header">
+              <div class="cat-icon icon-cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+              </div>
+              <h3 class="cat-title">Model Deployment & Cloud</h3>
+            </div>
+            <ul class="skill-items">
+              <li><strong>Web Deployment:</strong> Flask, Streamlit</li>
+              <li><strong>Edge AI:</strong> TensorFlow Lite (TFLite Quantization)</li>
+              <li><strong>Cloud Platform:</strong> Google Cloud Platform (GCP)</li>
+              <li><strong>MLOps:</strong> Automated Pipeline Design, Versioning</li>
+              <li><strong>Mobile Integration:</strong> Android TFLite Runtime</li>
+            </ul>
+          </div>
+
+          <!-- Tools & Programming -->
+          <div class="skill-category-card glass-panel">
+            <div class="skill-icon-header">
+              <div class="cat-icon icon-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3 class="cat-title">Tools, Languages & Data</h3>
+            </div>
+            <ul class="skill-items">
+              <li><strong>Programming:</strong> Python, SQL</li>
+              <li><strong>Data Stack:</strong> Pandas, NumPy, Matplotlib, Seaborn</li>
+              <li><strong>Version Control:</strong> Git, GitHub</li>
+              <li><strong>Environments:</strong> Linux, Jupyter, Google Colab</li>
+              <li><strong>Development:</strong> REST API Integration, Docker basics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section certs-section" id="certifications" aria-labelledby="certs-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CREDENTIALS</span>
+          <h2 class="section-title" id="certs-heading">Professional Certifications</h2>
+          <p class="section-desc">Certified proficiencies recognized by leading industry and academic bodies.</p>
+        </div>
+
+        <div class="certs-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <h3 class="cert-title">DeepLearning.AI TensorFlow Developer</h3>
+            <p class="cert-issuer">DeepLearning.AI</p>
+            <p class="cert-desc">
+              Mastery of building scalable neural networks, convolutional vision systems, NLP sequence models, and time series algorithms using TensorFlow.
+            </p>
+            <span class="cert-status">Verified Credential</span>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <h3 class="cert-title">Machine Learning</h3>
+            <p class="cert-issuer">DeepLearning.AI & Stanford Online</p>
+            <p class="cert-desc">
+              Rigorous grounding in supervised learning, unsupervised learning, recommender systems, reinforcement learning, and production best practices.
+            </p>
+            <span class="cert-status">Verified Credential</span>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <h3 class="cert-title">Bangkit Academy Machine Learning</h3>
+            <p class="cert-issuer">Google, GoTo, Traveloka</p>
+            <p class="cert-desc">
+              Intensive industry-led academy covering deep learning engineering, end-to-end capstone deployment, and professional tech readiness.
+            </p>
+            <span class="cert-status">Certified Graduate</span>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <h3 class="cert-title">Associate Data Scientist</h3>
+            <p class="cert-issuer">National Professional Certification Authority (BNSP)</p>
+            <p class="cert-desc">
+              National professional competency certification validating statistical data analysis, machine learning modeling, and actionable business insights.
+            </p>
+            <span class="cert-status">Certified Competent</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">COMMUNICATION</span>
+          <h2 class="section-title" id="contact-heading">Get In Touch</h2>
+          <p class="section-desc">Open for Machine Learning Engineer roles, industrial AI projects, and technical collaborations.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Channels -->
+          <div class="contact-cards-container">
+            <!-- Email Card -->
+            <div class="contact-info-card glass-panel">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-label">Email Address</span>
+                <a href="mailto:damararjuna819@gmail.com" class="contact-val">damararjuna819@gmail.com</a>
+              </div>
+              <div class="contact-card-actions">
+                <a href="mailto:damararjuna819@gmail.com" class="action-btn" title="Open Mail Client">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <button class="action-btn copy-btn" data-copy="damararjuna819@gmail.com" aria-label="Copy email" title="Copy Email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span class="copy-tooltip">Copy</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Phone / WhatsApp Card -->
+            <div class="contact-info-card glass-panel">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-label">Phone & WhatsApp</span>
+                <a href="tel:085156922833" class="contact-val">0851-5692-2833</a>
+              </div>
+              <div class="contact-card-actions">
+                <a href="https://wa.me/6285156922833" target="_blank" rel="noopener noreferrer" class="action-btn" title="Open WhatsApp Chat">
+                  <span class="wa-btn-text">WhatsApp</span>
+                </a>
+                <button class="action-btn copy-btn" data-copy="0851-5692-2833" aria-label="Copy phone" title="Copy Phone">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span class="copy-tooltip">Copy</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-info-card glass-panel">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-label">Location</span>
+                <p class="contact-val">Petukangan Utara, South Jakarta, Indonesia</p>
+              </div>
+              <div class="contact-card-actions">
+                <span class="timezone-badge">WIB (UTC+7)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Message Card -->
+          <div class="direct-message-card glass-panel">
+            <h3 class="dm-title">Direct Inquiries</h3>
+            <p class="dm-desc">
+              Whether you have an upcoming Machine Learning Engineer opening, need edge AI pipeline consultation, 
+              or want to discuss computer vision deployment, feel free to reach out directly.
+            </p>
+            <div class="dm-actions">
+              <a href="mailto:damararjuna819@gmail.com?subject=Machine%20Learning%20Opportunity%20-%20Arjuna%20Dwi%20Damara%20Putra" class="btn btn-primary btn-block">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>Compose Direct Email</span>
+              </a>
+              <a href="https://wa.me/6285156922833?text=Hi%20Arjuna,%20I%20reviewed%20your%20Machine%20Learning%20portfolio..." target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block">
+                <span>Start WhatsApp Conversation</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-symbol">&lt;</span>
+          <span class="logo-name">Arjuna</span><span class="logo-accent">.ai</span>
+          <span class="logo-symbol">/&gt;</span>
+        </a>
+        <p class="footer-tagline">
+          Arjuna Dwi Damara Putra — Machine Learning Engineer.<br>
+          High-performance AI solutions engineered for industrial and edge applications.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <span class="footer-nav-title">Navigation</span>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About & Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-meta">
+        <span class="footer-nav-title">Contact & Location</span>
+        <p class="footer-contact-item">Petukangan Utara, South Jakarta</p>
+        <p class="footer-contact-item"><a href="mailto:damararjuna819@gmail.com">damararjuna819@gmail.com</a></p>
+        <p class="footer-contact-item"><a href="tel:085156922833">0851-5692-2833</a></p>
+        <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          <span>Top</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright">&copy; 2026 Arjuna Dwi Damara Putra. All rights reserved.</p>
+        <p class="built-with">Built with Semantic HTML5, Modern CSS & Vanilla JavaScript &bull; Hosted on GitHub Pages</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js" defer></script>
+</body>
+</html>
